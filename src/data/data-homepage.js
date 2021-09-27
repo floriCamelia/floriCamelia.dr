@@ -6,7 +6,7 @@ const dataHomePage = {
 
   featuredTitle: 'A sosit toamna cu darurile ei minunate. Crizanteme la Preț Unic!',
   featuredDescription: ['Începând la doar 15 LEI firul de crizantemă! Ofertă disponibilă în stoc.'],
-  cta: 'Comandă acum',
+  cta: 'Comandă prin telefon',
 };
 
 export default dataHomePage;

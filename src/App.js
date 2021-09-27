@@ -25,7 +25,7 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <HashRouter basename="/floriCamelia">
+      <HashRouter basename="/page">
         <UtilityNav />
         <Header/>
         <Route exact path='/' component={HomePage}/>

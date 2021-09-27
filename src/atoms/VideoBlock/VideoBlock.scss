@@ -15,7 +15,7 @@ $object: 'video-block';
   @media (min-width: #{map-get($breakpoints, medium)}) {
     // Medium Up
     &--large {
-      @include container(938px, $space-v-small, $space-v-small);
+      @include container(905px, $space-v-small, $space-v-small);
 
       iframe {
         height: 500px;

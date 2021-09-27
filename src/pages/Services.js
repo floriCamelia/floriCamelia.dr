@@ -47,7 +47,7 @@ Services.defaultProps = {
       imgSrc: FloralArrangements,
       imgAlt: 'Image ALT',
       title: 'Aranjamente Florale',
-      description: 'Aranjamentele cu flori proaspete este cea mai bună alegere pentru evenimentul tău special.',
+      description: 'Aranjamentele cu flori proaspete este cea mai bună alegere pentru evenimentul tău deosebit.',
       cta: {
         label: 'Vezi Detalii',
         url: '/servicii/aranjamente'
