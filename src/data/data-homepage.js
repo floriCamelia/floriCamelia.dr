@@ -5,7 +5,7 @@ const dataHomePage = {
   videoTitle: 'FloriCamelia - Drochia, Moldova',
 
   featuredTitle: 'A sosit toamna cu darurile ei minunate. Crizanteme la Preț Unic!',
-  featuredDescription: ['Începând la doar 15 LEI firul de crizantemă! Ofertă disponibilă în stoc.'],
+  featuredDescription: ['Începând la doar 15 LEI firul de crizantemă!','*Ofertă valabilă în limita stocului disponibil.'],
   cta: 'Comandă prin telefon',
 };
 

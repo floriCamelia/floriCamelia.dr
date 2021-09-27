@@ -7,7 +7,7 @@ import HeroImg from '../assets/img/contactHero.jpg'
 
 export default class ContactUs extends React.Component {
   render() {
-    const {heroTitle, form} = this.props;
+    const {heroTitle} = this.props;
 
     return (
       <section className='contact-us-page'>
