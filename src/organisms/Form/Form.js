@@ -19,7 +19,7 @@ export default class Form extends React.Component {
           <Subheading subheading='Luați legătura cu noi.'/>
           <a className='form__text description__large phone' href='tel:+37367617827'><i className="fas fa-phone-square-alt"></i> +373 676 17 827</a>
           <a className='form__text description__large phone' href='tel:+37367617284'><i className="fas fa-phone-square-alt"></i>+373 676 17 284</a>
-          <a className='email' href='mailto:marik1988@gmail.com'><i className="fas fa-envelope"></i>marik1988@gmail.com</a>
+          <a className='email' href='mailto:marik1988@gmail.com?subject=Email de pe website'><i className="fas fa-envelope"></i>marik1988@gmail.com</a>
         </div>
 
         <div className='form__col'>
