@@ -1,0 +1,9 @@
+@import "../../App";
+$object: 'banner';
+
+.#{$object} {
+
+  @media (min-width: #{map-get($breakpoints, large)}) {
+    // Large Up
+  }
+}

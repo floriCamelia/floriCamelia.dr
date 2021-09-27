@@ -1,0 +1,121 @@
+// Global
+* {
+  box-sizing: border-box;
+}
+
+// Colors
+$primary-accent: #2aa7ae;
+$primary-accent-active: #25747b;
+
+// Spaces
+$space-v-xsmall: 15px;
+$space-v-small: 24px;
+$space-v-large: 40px;
+
+// Viewport
+$max-width: 1440px;
+
+a {
+  color: $primary-accent;
+  text-decoration: none;
+
+  &:hover {
+    color: $primary-accent-active;
+  }
+}
+
+// Text
+p {
+  font-size: 18px;
+}
+
+.description__small {
+  font-size: 14px;
+}
+
+.description__large {
+  font-size: 22px;
+}
+
+// Breakpoints
+$breakpoints: (
+  small: 0,
+  medium: 768px,
+  large: 1081px
+);
+
+@mixin container($widthval, $leftval, $rightval) {
+  max-width: $widthval;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $leftval;
+  padding-right: $rightval;
+}
+
+@mixin section {
+  margin-top: 80px;
+  margin-bottom: 80px;
+
+  @media (min-width: #{map-get($breakpoints, large)}) {
+    // Large Up
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 450px;
+  width: 100%;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 450px;
+  width: 100%;
+}
+
+// Slick Slider
+.slick-dots {
+  bottom: -35px;
+}
+
+.slick-dots li button:before {
+  font-size: 10px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: $primary-accent;
+}
+
+// PAGES STYLES
+.homepage {
+  .video-block,
+  .colorblock {
+    @include section;
+  }
+}
+.services-page {
+  .grid,
+  .card-slider {
+    @include section;
+  }
+}
+.article-page {
+  .article,
+  .grid {
+    @include section;
+  }
+}
+.contact-us-page {
+  .form {
+    @include section;
+  }
+}
+.about-us-page {
+  .colorblock {
+    @include section;
+  }
+}

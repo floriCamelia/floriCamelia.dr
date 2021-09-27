@@ -1,0 +1,70 @@
+@import "../../App";
+$object: 'card-slider';
+
+.#{$object} {
+  @include container($max-width, $space-v-xsmall, $space-v-xsmall);
+  padding-bottom: $space-v-large;
+
+  &__card {
+    text-align: center;
+  }
+
+  .subheading {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  &__text {
+    padding: 0 $space-v-small $space-v-small;
+
+    p:first-of-type {
+      padding-bottom: 16px;
+      line-height: 1.8;
+    }
+  }
+
+  &__text p:last-of-type {
+    text-align: center;
+    padding-bottom: $space-v-small;
+    font-weight: 700;
+  }
+
+  .icon {
+    color: $primary-accent-active;
+    font-size: 29px;
+    text-align: center;
+  }
+
+   @media (min-width: #{map-get($breakpoints, medium)}) {
+    // Medium Up
+     padding-left: $space-v-small;
+     padding-right: $space-v-small;
+
+     &__text {
+       width: 100%;
+       max-width: 500px;
+       margin-left: auto;
+       margin-right: auto;
+     }
+
+     p:first-child {
+       max-width: 700px;
+       margin: auto;
+     }
+  }
+
+  @media (min-width: #{map-get($breakpoints, large)}) {
+    // Large Up
+    padding-left: $space-v-large;
+    padding-right: $space-v-large;
+
+    &__wrapper {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

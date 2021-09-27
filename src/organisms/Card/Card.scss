@@ -1,0 +1,28 @@
+@import "../../App";
+$object: 'card';
+
+.#{$object} {
+  border: 1px solid #bebebe;
+  box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.32);
+
+  &__text {
+    padding: $space-v-small;
+
+    h3 {
+      margin: 0;
+      font-size: 24px;
+    }
+  }
+
+  @media (min-width: #{map-get($breakpoints, large)}) {
+    // Large Up
+    &__text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .cta-primary {
+      margin-top: auto;
+    }
+  }
+}

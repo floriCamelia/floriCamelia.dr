@@ -1,0 +1,65 @@
+@import "./src/App";
+
+$object: 'header';
+
+.#{$object} {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__logo {
+    margin: $space-v-small 0;
+    position: relative;
+  }
+
+  &__logo-motto {
+    position: absolute;
+    top: 120px;
+    left: 140px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .menu {
+    margin: 16px 0 $space-v-small;
+    &__wrapper {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+
+      li {
+          list-style: none;
+        margin: 15px 0;
+
+        a {
+          padding: 5px 15px;
+
+          &.active {
+            position: relative;
+            font-weight: 500;
+
+            &:before {
+              content: '';
+              width: 100%;
+              height: 2px;
+              background: $primary-accent-active;
+              position: absolute;
+              bottom: 0;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: #{map-get($breakpoints, large)}) {
+    // Large Up
+    .menu__wrapper {
+      display: flex;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+@import "../../App";
+$object: 'utility-nav';
+
+.#{$object} {
+  &__row {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 7px $space-v-xsmall;
+    background: $primary-accent-active;
+    z-index: 99;
+  }
+
+  &__features {
+    display: none;
+    padding: 16px $space-v-xsmall 7px;
+    background: linear-gradient(0.25turn, #ffca5a, #f4efed, #ffca5a);
+  }
+
+  ul {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    max-width: $max-width;
+
+    li {
+      padding: 4px 10px;
+      list-style: none;
+
+      &:first-child {
+        flex-grow: 1;
+      }
+
+      i {
+        font-size: 24px;
+      }
+
+      a {
+        color: white;
+        display: flex;
+        align-items: center;
+
+        span {
+          padding-left: 7px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 852px) {
+    // Medium Up
+    &__features {
+      display: block;
+    }
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      @include container($max-width, 0, 0);
+
+      h4 {
+        padding: 5px;
+        margin: 0;
+      }
+    }
+  }
+}

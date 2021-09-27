@@ -1,0 +1,32 @@
+@import "../../App";
+
+$object: 'video-block';
+
+.#{$object} {
+  &--large {
+    margin-left: $space-v-xsmall;
+    margin-right: $space-v-xsmall;
+
+    iframe {
+      height: 300px;
+    }
+  }
+
+  @media (min-width: #{map-get($breakpoints, medium)}) {
+    // Medium Up
+    &--large {
+      @include container(938px, $space-v-small, $space-v-small);
+
+      iframe {
+        height: 500px;
+      }
+    }
+  }
+
+  @media (min-width: #{map-get($breakpoints, large)}) {
+    // Large Up
+    &--large {
+      padding: 0;
+    }
+  }
+}

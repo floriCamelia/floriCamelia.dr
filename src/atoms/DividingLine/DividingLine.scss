@@ -1,0 +1,14 @@
+@import "../../App";
+$object: 'dividing-line';
+
+.#{$object} {
+  width: 100%;
+  max-width: $max-width;
+  margin: auto;
+  border: 1px solid $primary-accent;
+
+  &--full {
+    width: 100%;
+    max-width: unset;
+  }
+}

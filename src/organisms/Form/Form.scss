@@ -1,0 +1,56 @@
+@import "../../App";
+$object: 'form';
+
+.#{$object} {
+  @include container($max-width, $space-v-xsmall, $space-v-xsmall);
+
+  &__col {
+    margin-bottom: 60px;
+  }
+
+  &__text {
+    margin: $space-v-small 0;
+  }
+
+  .phone,
+  .email {
+    display: block;
+    position: relative;
+    padding-left: 22px;
+    word-break: keep-all;
+    width: fit-content;
+
+    i {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 20px;
+    }
+  }
+
+  .email {
+    padding-left: 27px;
+  }
+
+  &__footerNote {
+    max-width: 740px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: #{map-get($breakpoints, medium)}) {
+    // Medium Up
+    padding-left: $space-v-small;
+    padding-right: $space-v-small;
+  }
+
+  @media (min-width: #{map-get($breakpoints, large)}) {
+    // Large Up
+    display: flex;
+    flex-direction: column;
+    padding-left: $space-v-large;
+    padding-right: $space-v-large;
+  }
+}

@@ -1,0 +1,71 @@
+@import "../../App";
+
+$object: 'grid';
+
+.#{$object} {
+  @include container($max-width, $space-v-xsmall, $space-v-xsmall);
+
+  > div,
+  > img {
+    margin: $space-v-small 0;
+  }
+
+  @media (min-width: #{map-get($breakpoints, medium)}) {
+    // Medium Up
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    > div,
+    > img {
+      width: 100%;
+      max-width: 550px;
+    }
+  }
+
+  @media (min-width: #{map-get($breakpoints, large)}) {
+    // Large Up
+    @include container($max-width, $space-v-large, $space-v-large);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: unset;
+
+    // Two COl
+    > div,
+    > img {
+      max-width: unset;
+      width: 48%;
+    }
+
+    > div:nth-child(2n + 1),
+    > img:nth-child(2n + 1) {
+      margin-right: 16px;
+    }
+
+    > div:nth-child(2n + 2),
+    > img:nth-child(2n + 2) {
+      margin-left: 16px;
+    }
+
+    // Three COl
+    &--three {
+      > div,
+      > img {
+        width: 30.7%;
+      }
+
+      > div:nth-child(2n + 1),
+      > div:nth-child(2n + 2),
+      > img:nth-child(2n + 1),
+      > img:nth-child(2n + 2) {
+        margin-right: 0;
+        margin-left: 0;
+      }
+
+      > div:nth-child(3n + 2):not(:last-child) {
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+    }
+  }
+}

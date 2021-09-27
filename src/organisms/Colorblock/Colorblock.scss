@@ -1,0 +1,60 @@
+@import "../../App";
+
+$object: 'colorblock';
+
+.#{$object} {
+  margin: $space-v-small 0;
+
+  &__text {
+    padding: 15px $space-v-small;
+  }
+
+  // Modifier
+  &--reverse {
+    flex-direction: row-reverse;
+
+    .#{$object}__text {
+      padding-bottom: $space-v-large;
+    }
+
+    img {
+      display: flex;
+      max-width: 435px;
+      margin: auto;
+      object-fit: contain;
+    }
+  }
+
+  @media (min-width: #{map-get($breakpoints, medium)}) {
+    // Medium Up
+    &__text {
+      max-width: 80%;
+      margin: auto;
+    }
+  }
+
+  @media (min-width: #{map-get($breakpoints, large)}) {
+    // Large Up
+    display: flex;
+    @include container($max-width, $space-v-large, $space-v-large);
+
+    > div, img {
+      width: 50%;
+    }
+
+    &__text {
+      padding-left: 0;
+    }
+
+    // Modifier
+    &--reverse {
+      img {
+        max-width: unset;
+      }
+      .#{$object}__text {
+        padding-left: $space-v-large;
+        padding-bottom: 0;
+      }
+    }
+  }
+}

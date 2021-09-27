@@ -1,0 +1,15 @@
+@import "../../App";
+$object: 'cta-inline';
+
+.#{$object} {
+  border: 0;
+  background: #ffffff;
+  font-size: 16px;
+  color: $primary-accent;
+  cursor: pointer;
+  padding: 10px 0;
+
+  &:hover {
+    color: $primary-accent-active;
+  }
+}

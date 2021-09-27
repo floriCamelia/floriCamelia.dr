@@ -1,0 +1,11 @@
+@import "src/App";
+$object: 'article';
+
+.#{$object} {
+  @include container($max-width, $space-v-xsmall, $space-v-xsmall);
+
+   &__description {
+    max-width: 820px;
+    line-height: 1.6;
+  }
+}

@@ -1,0 +1,39 @@
+@import "../../App";
+$object: 'image';
+
+.#{$object} {
+  width: 100%;
+
+  &--logo {
+    max-width: 300px;
+  }
+
+  &--hero {
+    height: 560px;
+    object-fit: cover;
+  }
+
+  &--card {
+    height: 370px;
+    object-position: center left;
+    object-fit: cover;
+  }
+
+  &--colorblock {
+    align-self: center;
+  }
+
+  &--contact {
+    align-self: center;
+    margin: $space-v-small auto 0;
+  }
+
+  &--gridCard {
+    max-height: 380px;
+    object-fit: cover;
+  }
+
+  @media (min-width: #{map-get($breakpoints, medium)}) {
+    // Medium Up
+  }
+}
