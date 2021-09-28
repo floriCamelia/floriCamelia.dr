@@ -34,10 +34,9 @@ export default class ArticleBridal  extends React.Component {
 ArticleBridal.defaultProps = {
   title: 'Detalii Livrare',
   description: [
-    'L-ai întâlnit pe alesul inimii tale și ați stabilit o dată, acuma vin-o la noi să alegeți florile!',
-    'Fiecare nuntă are o temă și un stil în toate culorile fierbinți! Care este viziunea ta?',
-    'Vin-o la noi să discutăm împreună despre buchetul tău de mireasă! Va fi compus din florile sau din culorile tale preferate, vom confecționa manual pentru tine buchetul la care visezi.',
-    'Avem flori superbe pentru nunta ta! Programează o întâlnire cu noi pentru a găsi florile potrivite pentru tine.',
+    'Fiecare nuntă are o temă și un stil în toate culorile fierbinți! Care este viziunea voastră?',
+    'Veniți la noi să discutăm împreună despre buchetul miresei! Va fi compus din florile sau din culorile preferate, vom confecționa manual buchetul la care visați.',
+    'Avem flori superbe pentru nunta voastră! Programați o întâlnire cu noi pentru a găsi florile potrivite.',
   ],
-  footerNotes: '<p>Așteptăm apelul tău la numărul de telefon <a href=\'tel:\'>+373 676 17 827</a> pentru a discuta mai multe detalii.</p>'
+  footerNotes: '<p>Așteptăm apelul dvs. la numărul de telefon <a href=\'tel:\'>+373 676 17 827</a> pentru a discuta mai multe detalii.</p>'
 };

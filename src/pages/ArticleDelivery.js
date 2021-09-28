@@ -35,8 +35,8 @@ ArticleDelivery.defaultProps = {
   title: 'Detalii Livrare',
   description: [
     'Flori Camelia livrează buchete de flori, aranjamente florale și cadouri în orașul Drochia și împrejurimi în raza de __km.',
-    'Fie că ești acasă sau ești departe, dăruiește celor dragi un buchet de flori superbe pentru a-i surprinde.',
-    'Avem flori pentru diverse ocazii, vorbește cu noi despre ocazia ta fie aceasta zi de naștere, aniversare sau nuntă, sărbătorirea noului născut sau chiar un simplu mulțumesc.'
+    'Fie că sunteți acasă sau departe, dăruiți celor dragi un buchet de flori superbe pentru a-i surprinde.',
+    'Avem flori pentru diverse ocazii, vorbiți cu noi despre ocazia dvs. și împreună vom alege florile potrivite.'
   ],
-  footerNotes: '<p>Sună-ne acum să vorbim despre florile dorite și cere o comandă <a href=\'tel:\'>+373 676 17 827</a>.</p>'
+  footerNotes: '<p>Sunați-ne acum și cereți o comandă <a href=\'tel:\'>+373 676 17 827</a>.</p>'
 };
