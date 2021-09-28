@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/floriCamelia.dr/static/css/main.2042cdcb.chunk.css",
-    "main.js": "/floriCamelia.dr/static/js/main.3cf1b109.chunk.js",
-    "main.js.map": "/floriCamelia.dr/static/js/main.3cf1b109.chunk.js.map",
+    "main.js": "/floriCamelia.dr/static/js/main.80b342ab.chunk.js",
+    "main.js.map": "/floriCamelia.dr/static/js/main.80b342ab.chunk.js.map",
     "runtime-main.js": "/floriCamelia.dr/static/js/runtime-main.4f6a63ab.js",
     "runtime-main.js.map": "/floriCamelia.dr/static/js/runtime-main.4f6a63ab.js.map",
     "static/css/2.f22bcd04.chunk.css": "/floriCamelia.dr/static/css/2.f22bcd04.chunk.css",
@@ -46,6 +46,6 @@
     "static/css/2.f22bcd04.chunk.css",
     "static/js/2.d2215d73.chunk.js",
     "static/css/main.2042cdcb.chunk.css",
-    "static/js/main.3cf1b109.chunk.js"
+    "static/js/main.80b342ab.chunk.js"
   ]
 }
