@@ -4,6 +4,7 @@ import Article from "../organisms/Article/Article";
 import Grid from "../organisms/Grid/Grid";
 import Image from "../atoms/Image/Image";
 // Data
+import dataBridal from '../data/romanian/articles/data-bridal'
 import PrimaryImg from "../assets/img/pages/bridal.jpg";
 import SecondaryImg from "../assets/img/pages/bridal1.jpg";
 import TertiaryImg from "../assets/img/pages/bridal2.jpg";
@@ -15,11 +16,9 @@ export default class ArticleBridal  extends React.Component {
   }
 
   render() {
-    const {title, description, footerNotes} = this.props;
-
     return (
       <section className='article-page'>
-        <Article title={title} description={description} footerNotes={footerNotes}/>
+        <Article data={dataBridal}/>
         <Grid>
           <Image imgSrc={PrimaryImg} imgAlt='' modifier='image--gridCard'/>
           <Image imgSrc={SecondaryImg} imgAlt='' modifier='image--gridCard'/>
@@ -32,7 +31,7 @@ export default class ArticleBridal  extends React.Component {
 }
 
 ArticleBridal.defaultProps = {
-  title: 'Detalii Livrare',
+  title: 'Detalii Buchete de mireasă',
   description: [
     'Fiecare nuntă are o temă și un stil în toate culorile fierbinți! Care este viziunea voastră?',
     'Veniți la noi să discutăm împreună despre buchetul miresei! Va fi compus din florile sau din culorile preferate, vom confecționa manual buchetul la care visați.',

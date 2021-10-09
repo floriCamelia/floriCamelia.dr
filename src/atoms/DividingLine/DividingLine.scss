@@ -5,7 +5,8 @@ $object: 'dividing-line';
   width: 100%;
   max-width: $max-width;
   margin: auto;
-  border: 1px solid $primary-accent;
+  height: 2px;
+  background: $primary-accent;
 
   &--full {
     width: 100%;

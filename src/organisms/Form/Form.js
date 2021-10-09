@@ -11,22 +11,22 @@ import Map from "../../atoms/Map/Map";
 
 export default class Form extends React.Component {
   render() {
-    const {} = this.props;
+    const {data, dataContact} = this.props;
 
     return (
       <div className={`form`}>
         <div className='form__col'>
-          <Subheading subheading='Luați legătura cu noi.'/>
-          <a className='form__text description__large phone' href='tel:+37367617827'><i className="fas fa-phone-square-alt"></i> +373 676 17 827</a>
-          <a className='form__text description__large phone' href='tel:+37367617284'><i className="fas fa-phone-square-alt"></i>+373 676 17 284</a>
-          <a className='email' href='mailto:marik1988@gmail.com?subject=Email de pe website'><i className="fas fa-envelope"></i>marik1988@gmail.com</a>
+          <Subheading subheading={data.subheading}/>
+          <a className='form__text description__large phone' href={dataContact.phone1.action}><i className="fas fa-phone-square-alt"></i>{dataContact.phone1.label}</a>
+          <a className='form__text description__large phone' href={dataContact.phone2.action}><i className="fas fa-phone-square-alt"></i>{dataContact.phone2.label}</a>
+          <a className='email' href={`${dataContact.email.action}?subject=Email de pe website`}><i className="fas fa-envelope"></i>{dataContact.email.label}</a>
         </div>
 
         <div className='form__col'>
-          <h2 className='subheading'><i className="fas fa-clock"></i> Ore de lucru</h2>
-          <p>Luni - Joi de la 8:00 - 20:00</p>
-          <p>Vineri - Duminică de la 8:00 - 21:00</p>
-          <p><i className="fas fa-map-marker-alt"></i> 31 august, Drochia, Moldova</p>
+          <h2 className='subheading'><i className="fas fa-clock"></i> {data.workingHoursTitle}</h2>
+          <p>{data.time1}</p>
+          <p>{data.time2}</p>
+          <p><i className="fas fa-map-marker-alt"></i> {dataContact.address}</p>
         </div>
         <div className='form__col'>
           <Map />
@@ -36,7 +36,7 @@ export default class Form extends React.Component {
           <Image imgSrc={ShopImg2} modifier='image--contact'/>
           <Image imgSrc={ShopImg3} modifier='image--contact'/>
         </Grid>
-        <p className='form__footerNote'>Servim cu mândrie clienții din Drochia, precum și din zonele apropiate.</p>
+        <p className='form__footerNote'>{data.footnote}</p>
       </div>
     )
   }

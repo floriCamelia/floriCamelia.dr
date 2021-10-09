@@ -11,7 +11,7 @@ export default class Image extends React.Component {
     const { isFullWidth } = this.props;
 
     return (
-      <hr className={`dividing-line${isFullWidth ? ' dividing-line--full':''}`} />
+      <div className={`dividing-line${isFullWidth ? ' dividing-line--full':''}`}></div>
     )
   }
 }

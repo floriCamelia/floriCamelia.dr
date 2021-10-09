@@ -1,4 +1,5 @@
 @import "../../App";
+
 $object: 'utility-nav';
 
 .#{$object} {
@@ -10,43 +11,108 @@ $object: 'utility-nav';
     padding: 7px $space-v-xsmall;
     background: $primary-accent-active;
     z-index: 99;
+
+    > ul {
+      margin: 0 auto;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: $max-width;
+
+      > li {
+        padding: 4px 10px;
+        list-style: none;
+
+        &:first-child {
+          flex-grow: 1;
+        }
+
+        i:not(.icon-arrow) {
+          color: #ffffff;
+          font-size: 24px;
+        }
+
+        .icon-arrow {
+          padding-left: 7px;
+          color: #ffffff;
+          font-size: 12px;
+        }
+
+        a {
+          color: white;
+          display: flex;
+          align-items: center;
+
+          span {
+            padding-left: 7px;
+          }
+        }
+      }
+    }
+  }
+
+  &__menu {
+    cursor: pointer;
+    position: relative;
+  }
+
+  &__flag {
+    width: 25px;
+  }
+
+  &__language {
+    //display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+
+    &.visible {
+      display: block;
+    }
+
+    &--dropdown {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+      background: $primary-accent-active;
+    }
+
+    &--item {
+      list-style: none;
+
+      button {
+        padding: 7px;
+        cursor: pointer;
+        background: $primary-accent-active;
+        font-size: 12px;
+        text-transform: uppercase;
+        border: 0;
+        color: #ffffff;
+
+        &:hover {
+          background: #fefefe;
+          color: $primary-accent-active;
+        }
+
+        .isDisabled {
+          opacity: 0.75;
+        }
+
+        &:disabled {
+          background: $primary-accent-active;
+          color: rgba(255, 255, 255, 0.6);
+        }
+      }
+    }
   }
 
   &__features {
     display: none;
     padding: 16px $space-v-xsmall 7px;
     background: linear-gradient(0.25turn, #ffca5a, #f4efed, #ffca5a);
-  }
-
-  ul {
-    margin: 0 auto;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    max-width: $max-width;
-
-    li {
-      padding: 4px 10px;
-      list-style: none;
-
-      &:first-child {
-        flex-grow: 1;
-      }
-
-      i {
-        font-size: 24px;
-      }
-
-      a {
-        color: white;
-        display: flex;
-        align-items: center;
-
-        span {
-          padding-left: 7px;
-        }
-      }
-    }
   }
 
   @media (min-width: 852px) {

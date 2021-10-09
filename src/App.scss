@@ -3,6 +3,25 @@
   box-sizing: border-box;
 }
 
+body {
+  padding-top: 40px;
+  margin: 0;
+  font-family: -apple-system, 'Montserrat', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  color: rgb(34, 34, 35);
+}
+
+.loading-text {
+  text-align: center;
+  margin: 80px 0;
+}
+
 // Colors
 $primary-accent: #2aa7ae;
 $primary-accent-active: #25747b;
