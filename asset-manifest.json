@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/floriCamelia.dr/static/css/main.2042cdcb.chunk.css",
-    "main.js": "/floriCamelia.dr/static/js/main.780db959.chunk.js",
-    "main.js.map": "/floriCamelia.dr/static/js/main.780db959.chunk.js.map",
-    "runtime-main.js": "/floriCamelia.dr/static/js/runtime-main.4f6a63ab.js",
-    "runtime-main.js.map": "/floriCamelia.dr/static/js/runtime-main.4f6a63ab.js.map",
+    "main.css": "/floriCamelia.dr/static/css/main.dd967269.chunk.css",
+    "main.js": "/floriCamelia.dr/static/js/main.636f2bae.chunk.js",
+    "main.js.map": "/floriCamelia.dr/static/js/main.636f2bae.chunk.js.map",
+    "runtime-main.js": "/floriCamelia.dr/static/js/runtime-main.5749a387.js",
+    "runtime-main.js.map": "/floriCamelia.dr/static/js/runtime-main.5749a387.js.map",
     "static/css/2.f22bcd04.chunk.css": "/floriCamelia.dr/static/css/2.f22bcd04.chunk.css",
-    "static/js/2.d2215d73.chunk.js": "/floriCamelia.dr/static/js/2.d2215d73.chunk.js",
-    "static/js/2.d2215d73.chunk.js.map": "/floriCamelia.dr/static/js/2.d2215d73.chunk.js.map",
-    "static/js/3.6683485b.chunk.js": "/floriCamelia.dr/static/js/3.6683485b.chunk.js",
-    "static/js/3.6683485b.chunk.js.map": "/floriCamelia.dr/static/js/3.6683485b.chunk.js.map",
+    "static/js/2.4d8ac7a6.chunk.js": "/floriCamelia.dr/static/js/2.4d8ac7a6.chunk.js",
+    "static/js/2.4d8ac7a6.chunk.js.map": "/floriCamelia.dr/static/js/2.4d8ac7a6.chunk.js.map",
+    "static/js/3.4bde49c9.chunk.js": "/floriCamelia.dr/static/js/3.4bde49c9.chunk.js",
+    "static/js/3.4bde49c9.chunk.js.map": "/floriCamelia.dr/static/js/3.4bde49c9.chunk.js.map",
     "index.html": "/floriCamelia.dr/index.html",
     "static/css/2.f22bcd04.chunk.css.map": "/floriCamelia.dr/static/css/2.f22bcd04.chunk.css.map",
-    "static/css/main.2042cdcb.chunk.css.map": "/floriCamelia.dr/static/css/main.2042cdcb.chunk.css.map",
-    "static/js/2.d2215d73.chunk.js.LICENSE.txt": "/floriCamelia.dr/static/js/2.d2215d73.chunk.js.LICENSE.txt",
+    "static/css/main.dd967269.chunk.css.map": "/floriCamelia.dr/static/css/main.dd967269.chunk.css.map",
+    "static/js/2.4d8ac7a6.chunk.js.LICENSE.txt": "/floriCamelia.dr/static/js/2.4d8ac7a6.chunk.js.LICENSE.txt",
     "static/media/aboutCEO.1e2103e8.jpg": "/floriCamelia.dr/static/media/aboutCEO.1e2103e8.jpg",
     "static/media/aboutHero.b68c6701.jpg": "/floriCamelia.dr/static/media/aboutHero.b68c6701.jpg",
     "static/media/aranjamenteFlorale.d162932d.jpg": "/floriCamelia.dr/static/media/aranjamenteFlorale.d162932d.jpg",
@@ -42,10 +42,10 @@
     "static/media/wedding.4610f414.jpg": "/floriCamelia.dr/static/media/wedding.4610f414.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.4f6a63ab.js",
+    "static/js/runtime-main.5749a387.js",
     "static/css/2.f22bcd04.chunk.css",
-    "static/js/2.d2215d73.chunk.js",
-    "static/css/main.2042cdcb.chunk.css",
-    "static/js/main.780db959.chunk.js"
+    "static/js/2.4d8ac7a6.chunk.js",
+    "static/css/main.dd967269.chunk.css",
+    "static/js/main.636f2bae.chunk.js"
   ]
 }
