@@ -1,0 +1,34 @@
+@import "../../App";
+
+$object: 'scroll-btn';
+
+.#{$object} {
+  position: fixed;
+  right: 0;
+  bottom: 24px;
+  background: transparent;
+  color: $primary-accent;
+  border: 0;
+  outline: none;
+  padding: 7px;
+  cursor: pointer;
+  transition: all .5s;
+  font-size: 16px;
+  display: none;
+  z-index: 2;
+
+  &.isVisible {
+    display: block;
+  }
+
+  &:hover {
+    color: $primary-accent-active;
+    transform: translateY(-2px);
+    background: #ffffff;
+  }
+
+  @media (min-width: 852px) {
+    // Medium Up
+    right: 10px;
+  }
+}

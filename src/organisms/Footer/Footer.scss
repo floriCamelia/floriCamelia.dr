@@ -4,6 +4,8 @@ $object: 'footer';
 
 .#{$object} {
   text-align: center;
+  margin-bottom: 24px;
+  position: relative;
 
   .dividing-line {
     margin: 20px 0;

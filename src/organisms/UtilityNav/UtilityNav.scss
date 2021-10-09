@@ -4,20 +4,18 @@ $object: 'utility-nav';
 
 .#{$object} {
   &__row {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 7px $space-v-xsmall;
-    background: $primary-accent-active;
-    z-index: 99;
+  background: $primary-accent-active;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 7px $space-v-xsmall;
+  z-index: 99;
+  width: 100%;
 
     > ul {
       margin: 0 auto;
       padding: 0;
       display: flex;
-      justify-content: center;
-      align-items: center;
       max-width: $max-width;
 
       > li {
@@ -39,10 +37,20 @@ $object: 'utility-nav';
           font-size: 12px;
         }
 
+        a, i {
+          transition: all .5s;
+        }
+
         a {
           color: white;
           display: flex;
           align-items: center;
+
+          &:hover {
+            i {
+              opacity: .7;
+            }
+          }
 
           span {
             padding-left: 7px;

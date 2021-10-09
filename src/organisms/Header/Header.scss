@@ -20,7 +20,6 @@ $object: 'header';
     left: 140px;
     font-size: 16px;
     font-weight: 700;
-    width: 100%;
   }
 
   .menu {
@@ -36,10 +35,12 @@ $object: 'header';
 
         a {
           padding: 5px 15px;
+          transition: all .5s;
 
           &.active {
             position: relative;
             font-weight: 500;
+            color: #25747b;
 
             &:before {
               content: '';

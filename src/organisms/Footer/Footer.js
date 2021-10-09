@@ -6,7 +6,7 @@ import dataGeneralInfo from '../../data/romanian/global/data-general-info';
 
 export default class Footer extends React.Component {
   render() {
-    const {data} = this.props;
+    const {data, scrollToTop} = this.props;
 
     return (
       <footer className='footer'>

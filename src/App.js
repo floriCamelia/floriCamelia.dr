@@ -23,6 +23,7 @@ import dataFooter from "./data/romanian/global/data-footer";
 import dataServices from './data/romanian/data-services';
 // Images
 import dataHomePage from "./data/romanian/data-homepage";
+import ScrollBtn from "./atoms/scroll-btn/scroll-btn";
 
 export default class App extends React.Component {
 
@@ -39,6 +40,7 @@ export default class App extends React.Component {
           <Route exact path='/contact' component={ContactUs}/>
           <Route exact path='/despre-noi' component={AboutUs}/>
           <Footer data={dataFooter}/>
+          <ScrollBtn/>
       </HashRouter>
     );
   }

@@ -11,6 +11,7 @@ $object: 'cta-primary';
   border-radius: 5px;
   width: fit-content;
   border: 1px solid $primary-accent;
+  transition: all .4s;
 
   &:hover {
     border-color: $primary-accent-active;
